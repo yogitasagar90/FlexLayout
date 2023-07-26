@@ -1,0 +1,354 @@
+:root {
+    --color-pri: #f6d200;
+    --color-sec: #ededed;
+    --color-white: #fff;
+    --color-dark: #000;
+}
+
+
+body {
+    background-color: var(--color-sec);
+    font-family: 'Asap', sans-serif;
+    line-height: 1.5;
+    color: var(--color-dark);
+}
+
+/* Header Css Goes Here */
+
+.site-header {
+    background-color: var(--color-dark);
+    height: 400px;
+    display: flex;
+    color: var(--color-white);
+    flex-direction: column;
+
+}
+
+.site-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.site-description {
+    font-style: italic;
+    color: var(--color-pri);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.main-menu {
+    background-color: var(--color-pri);
+
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu li a {
+    color: var(--color-dark);
+    display: block;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.main-menu li a:hover,
+.main-menu li a:focus,
+.main-menu li a:active {
+    background-color: var(--color-dark);
+    color: var(--color-pri);
+}
+
+
+
+/* main content css */
+
+.content-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-area {
+    padding: 1.25rem;
+}
+
+
+/* ####  css for post section ####*/
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    margin-bottom: 1.25rem;
+}
+
+.post a {
+    color: var(--color-dark);
+}
+
+.post img {
+    height: 100%;
+    display: block;
+}
+
+.post-content>h2 {
+    background-color: var(--color-pri);
+    text-align: center;
+    padding: 1.875rem;
+}
+
+.post-content>p {
+    padding: 2rem;
+    background-color: var(--color-white);
+}
+
+/* Watch card css */
+.watch-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.watch-banner-container>img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.watch-content {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.875rem;
+}
+
+.watch-content h3 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.movie-info>span {
+    margin-right: 1rem;
+}
+
+.movie-story {
+    margin: 1rem 0;
+}
+
+.watch-content a:link,
+.watch-content a:visited {
+    text-decoration: underline;
+    color: var(--color-white);
+}
+
+/*  download section css */
+
+.download-info {
+    background-color: var(--color-white);
+    padding: 10px 1.25rem;
+}
+
+.download-image {
+    background-color: var(--color-dark);
+}
+
+.download-genere {
+    margin-bottom: 10px;
+}
+
+.download-content>a {
+    display: flex;
+    padding: 1.25rem;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    flex-direction: column;
+}
+
+.download-cast>img {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+}
+
+.download-rating {
+    display: flex;
+    background-color: var(--color-pri);
+    padding: 10px 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+/* gallary css */
+
+.gallary-imgs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallary-img {
+    height: 250px;
+    flex-grow: 1;
+    margin: 0 0 8px 8px;
+}
+
+.gallary-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallary-img:nth-child(4n + 1) {
+    flex-basis: 250px;
+}
+
+.gallary-img:nth-child(4n + 2) {
+    flex-basis: 325px;
+}
+
+.gallary-img:nth-child(4n + 3) {
+    flex-basis: 180px;
+}
+
+.gallary-img:nth-child(4n + 4) {
+    flex-basis: 400px;
+}
+
+/* footer css goes here*/
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+}
+
+/* sidebar css goes here */
+
+.sidebar-right {
+    background-color: var(--color-sec);
+    padding: 1.25rem;
+}
+
+.widget {
+    background-color: var(--color-white);
+    margin-bottom: 1.25rem;
+    border-radius: 5px;
+}
+
+.widget-content {
+    padding: 0.625rem;
+}
+
+.widget-content h3 {
+    text-transform: capitalize;
+    margin-bottom: 0.625rem;
+}
+
+.widget-content ul {
+    padding-left: 1rem;
+}
+
+.widget-content ul a:link,
+.widget-content ul a:visited {
+    color: var(--color-dark);
+    padding-bottom: 8px;
+    font-weight: bold;
+    display: block;
+    text-transform: capitalize;
+}
+
+@media all and (min-width : 768px) {
+    .posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .post {
+        width: 49%;
+    }
+
+    .post-content>h2 {
+        height: 132px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width : 992px) {
+    .watch-card {
+        flex-direction: row;
+        margin: 1.25rem;
+    }
+
+    .watch-banner-container {
+        flex: 0 0 400px;
+    }
+
+    figcaption.watch-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .download-content {
+        display: flex;
+    }
+
+    .download-info {
+        flex-grow: 1;
+    }
+
+    .download-rating,
+    .download-content>a {
+        justify-content: center;
+    }
+
+}
+
+@media all and (min-width : 1200px) {
+    .main-menu ul {
+        flex-direction: row;
+    }
+
+    .main-menu ul li {
+        flex-grow: 1;
+    }
+
+    .content-area {
+        flex-direction: row;
+    }
+
+    .sidebar-right {
+        flex: 0 0 320px;
+    }
+
+    .post-one-third {
+        width: 32%;
+    }
+
+    .post-one {
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-heading {
+    margin: 1.25rem;
+    text-align: center;
+    font-size: 2.25rem;
+    text-transform: capitalize;
+}
